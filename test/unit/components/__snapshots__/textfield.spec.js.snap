@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextField Component expects icon to be appended 1`] = `
+"<div class=\\"v-input v-input--hide-details theme--light v-text-field v-text-field--enclosed v-text-field--outlined\\">
+  <div class=\\"v-input__control\\">
+    <div class=\\"v-input__slot\\" style=\\"height: 65px;\\">
+      <fieldset aria-hidden=\\"true\\">
+        <legend style=\\"width: 0px;\\"><span>​</span></legend>
+      </fieldset>
+      <div class=\\"v-text-field__slot\\"><input id=\\"input-8\\" type=\\"text\\"></div>
+    </div>
+  </div>
+</div>"
+`;
+
+exports[`TextField Component expects icon to be pre-pended 1`] = `
+"<div class=\\"v-input v-input--hide-details theme--light v-text-field v-text-field--enclosed v-text-field--outlined v-text-field--placeholder\\" placeholder=\\"AppTextField with a custom prepend-inner icon\\">
+  <div class=\\"v-input__control\\">
+    <div class=\\"v-input__slot\\" style=\\"height: 65px;\\">
+      <div class=\\"v-input__prepend-inner\\"><img width=\\"24\\" height=\\"24\\" src=\\"https://cdns.iconmonstr.com/wp-content/assets/preview/2018/240/iconmonstr-random-thin.png\\"></div>
+      <fieldset aria-hidden=\\"true\\">
+        <legend style=\\"width: 0px;\\"><span>​</span></legend>
+      </fieldset>
+      <div class=\\"v-text-field__slot\\"><input id=\\"input-6\\" placeholder=\\"AppTextField with a custom prepend-inner icon\\" type=\\"text\\"></div>
+    </div>
+  </div>
+</div>"
+`;
+
+exports[`TextField Component shows an input tag with password field 1`] = `
+"<div class=\\"v-input v-input--hide-details theme--light v-text-field v-text-field--enclosed v-text-field--outlined\\" type=\\"password\\">
+  <div class=\\"v-input__control\\">
+    <div class=\\"v-input__slot\\" style=\\"height: 65px;\\">
+      <fieldset aria-hidden=\\"true\\">
+        <legend style=\\"width: 0px;\\"><span>​</span></legend>
+      </fieldset>
+      <div class=\\"v-text-field__slot\\"><input id=\\"input-5\\" type=\\"text\\"></div>
+    </div>
+  </div>
+</div>"
+`;

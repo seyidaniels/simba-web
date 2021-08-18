@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal Component Modal should be triggered on Button click 1`] = `
+"<div role=\\"dialog\\" class=\\"v-dialog__container\\" headertitle=\\"Add User\\" width=\\"43%\\">
+  <!---->
+</div>"
+`;

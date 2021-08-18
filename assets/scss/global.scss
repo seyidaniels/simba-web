@@ -1,0 +1,51 @@
+.heading-1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 62px;
+}
+
+.heading-2 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.heading-3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 42px;
+}
+
+.body {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.title, .v-application .title, #app .title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px !important;
+  line-height: 26px;
+  letter-spacing: 0 !important;
+}
+
+/* for page transition */
+.page-enter-active, .page-leave-active {
+  transition: opacity .5s
+}
+.page-enter, .page-leave-active {
+  opacity: 0
+}
+
+/* for Layout transition */
+.layout-enter-active, .layout-leave-active {
+  transition: opacity .4s
+}
+.layout-enter, .layout-leave-active {
+  opacity: 0
+}

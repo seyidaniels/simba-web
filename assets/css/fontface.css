@@ -1,0 +1,71 @@
+@font-face {
+  font-family: 'BR Firma';
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+  src: url('../fonts/BR_Firma_woff2/br_firma_thin.woff2') format('woff2'),
+  url('../fonts/BR_Firma_woff/br_firma_thin.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'BR Firma';
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+  src: url('../fonts/BR_Firma_woff2/br_firma_extra_light.woff2') format('woff2'),
+  url('../fonts/BR_Firma_woff/br_firma_extra_light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'BR Firma';
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src: url('../fonts/BR_Firma_woff2/br_firma_light.woff2') format('woff2'),
+  url('../fonts/BR_Firma_woff/br_firma_light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'BR Firma';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url('../fonts/BR_Firma_woff2/br_firma_regular.woff2') format('woff2'),
+  url('../fonts/BR_Firma_woff/br_firma_regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'BR Firma';
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url('../fonts/BR_Firma_woff2/br_firma_medium.woff2') format('woff2'),
+  url('../fonts/BR_Firma_woff/br_firma_medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'BR Firma';
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url('../fonts/BR_Firma_woff2/br_firma_semibold.woff2') format('woff2'),
+  url('../fonts/BR_Firma_woff/br_firma_semibold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'BR Firma';
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url('../fonts/BR_Firma_woff2/br_firma_bold.woff2') format('woff2'),
+  url('../fonts/BR_Firma_woff/br_firma_bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'BR Firma';
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+  src: url('../fonts/BR_Firma_woff2/br_firma_black.woff2') format('woff2'),
+  url('../fonts/BR_Firma_woff/br_firma_black.woff') format('woff');
+}

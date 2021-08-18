@@ -1,0 +1,12 @@
+.theme--light.v-application {
+  color: var(--v-grey-base)
+}
+
+.v-application {
+  main p {
+    margin-bottom: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+}

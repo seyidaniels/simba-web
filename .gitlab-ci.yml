@@ -1,0 +1,56 @@
+image: node:12.22-alpine
+
+stages:
+ - build_test
+#  - code_analysis
+ - deploy_dev
+
+variables:
+  DEV_DEPLOY_DIR: "simba-web"
+  DEV_BRANCH: "dev"
+  DEPLOY_COMMAND_DEV: "sudo npm i --unsafe-perm && sudo npm run build && sudo cp -r dist/* /var/www/simba-web-public && sudo chown -R www-data:www-data /var/www/simba-web-public/*"
+  REPO: "gitlab.patriciadev.com/${CI_PROJECT_PATH}.git"
+
+build_lint:
+  stage: build_test
+  tags:
+    - dev
+  script:
+    - npm install
+    # - npm run lint
+
+# sonarqube-check:
+#   stage: code_analysis
+#   image:
+#     name: sonarsource/sonar-scanner-cli:latest
+#     entrypoint: [""]
+#   variables:
+#     SONAR_USER_HOME: "${CI_PROJECT_DIR}/.sonar"  # Defines the location of the analysis task cache
+#     GIT_DEPTH: "0"  # Tells git to fetch all the branches of the project, required by the analysis task
+#   cache:
+#     key: "${CI_JOB_NAME}"
+#     paths:
+#       - .sonar/cache
+#   script:
+#     - sonar-scanner -Dsonar.projectKey=${CI_PROJECT_TITLE} -Dsonar.qualitygate.wait=true
+#   allow_failure: true
+#   only:
+#     # - merge_requests
+#     # - dev
+#     - gitlab-ci
+
+deploy:
+  stage: deploy_dev
+  image: alpine
+  tags:
+    - dev
+  before_script:
+    - apk add openssh-client
+    - eval $(ssh-agent -s)
+    - echo "$SSH_PRIV_KEY_GITLAB" | tr -d '\r' | ssh-add -
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+  script:
+    - ssh -o StrictHostKeyChecking=no $DEV_USER@$DEV_IP "cd /var/www/$DEV_DEPLOY_DIR && sudo git checkout $DEV_BRANCH && sudo git add . && sudo git stash && sudo git pull https://$GITLAB_USER:$GITLAB_PASS@$REPO $DEV_BRANCH --no-edit && $DEPLOY_COMMAND_DEV"
+  only:
+    - dev

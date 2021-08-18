@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Code Input  Component code input should show input with default length 1`] = `
+"<div class=\\"code-input-component\\">
+  <div class=\\"code-input-wrapper\\"><input id=\\"pin-input-0\\" type=\\"number\\" autocomplete=\\"off\\" maxlength=\\"1\\" class=\\"code-input\\"></div>
+  <div class=\\"code-input-wrapper\\"><input id=\\"pin-input-1\\" readonly=\\"readonly\\" type=\\"number\\" autocomplete=\\"off\\" maxlength=\\"1\\" class=\\"code-input\\"></div>
+  <div class=\\"code-input-wrapper\\"><input id=\\"pin-input-2\\" readonly=\\"readonly\\" type=\\"number\\" autocomplete=\\"off\\" maxlength=\\"1\\" class=\\"code-input\\"></div>
+  <div class=\\"code-input-wrapper\\"><input id=\\"pin-input-3\\" readonly=\\"readonly\\" type=\\"number\\" autocomplete=\\"off\\" maxlength=\\"1\\" class=\\"code-input\\"></div>
+  <div class=\\"code-input-wrapper\\"><input id=\\"pin-input-4\\" readonly=\\"readonly\\" type=\\"number\\" autocomplete=\\"off\\" maxlength=\\"1\\" class=\\"code-input\\"></div>
+  <div class=\\"code-input-wrapper\\"><input id=\\"pin-input-5\\" readonly=\\"readonly\\" type=\\"number\\" autocomplete=\\"off\\" maxlength=\\"1\\" class=\\"code-input\\"></div>
+</div>"
+`;
+
+exports[`Code Input  Component code input should show input with length of 4 1`] = `
+"<div class=\\"code-input-component\\">
+  <div class=\\"code-input-wrapper\\"><input id=\\"pin-input-0\\" type=\\"number\\" autocomplete=\\"off\\" maxlength=\\"1\\" class=\\"code-input\\"></div>
+  <div class=\\"code-input-wrapper\\"><input id=\\"pin-input-1\\" readonly=\\"readonly\\" type=\\"number\\" autocomplete=\\"off\\" maxlength=\\"1\\" class=\\"code-input\\"></div>
+  <div class=\\"code-input-wrapper\\"><input id=\\"pin-input-2\\" readonly=\\"readonly\\" type=\\"number\\" autocomplete=\\"off\\" maxlength=\\"1\\" class=\\"code-input\\"></div>
+  <div class=\\"code-input-wrapper\\"><input id=\\"pin-input-3\\" readonly=\\"readonly\\" type=\\"number\\" autocomplete=\\"off\\" maxlength=\\"1\\" class=\\"code-input\\"></div>
+</div>"
+`;
